@@ -1,0 +1,99 @@
+* {
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 38px;
+    background-image: linear-gradient(60deg, #118AB2, #06D6A0, #FFD166);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+img {
+    border-radius: 10px;
+    height: 240px;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 800px;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img {
+    height: 200px;
+    background-color: red;
+    border-radius: 5px;
+    background-image: url(images/bibimbap.jpeg);
+    background-size: cover;
+}
+
+.two {
+    background-color: black;
+    background-image: url(images/dakgalpi.webp);
+}
+
+.three {
+    background-color: #06D6A0;
+    background-image: url(images/jjimdak.jpg);
+}
