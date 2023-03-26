@@ -1,0 +1,127 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-container {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.logo-wrapper {
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+.logo-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.logo, h1 {
+    text-align: center;
+}
+
+.logo {
+    background-image: linear-gradient(60deg, #118AB2, #06D6A0, #FFD166);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline;
+    margin: auto;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.blog-image {
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/bibimbap2.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.two {
+    background-image: url(../images/dakgalpi.jpg);
+}
+
+.three {
+    background-image: url(../images/jjimdak.jpg);
+    background-position: center;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(60deg, #118AB2, #06D6A0, #FFD166);
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.ingredients {
+    column-count: 2;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    font-size: 20px;
+}
+
+.step-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div > li, ul, p {
+    font-weight: 300;
+    line-height: 160%;
+}
